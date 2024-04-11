@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">MyTestQuiz</string>
+
+    <string name="question_1">Яка найбільша планета у Сонячній системі?</string>
+    <string name="question_2">Хто написав \"Гамлета\"?</string>
+    <string name="question_3">Який елемент є основним компонентом алмазів?</string>
+
+    <string-array name="options_question_1">
+        <item>Меркурій</item>
+        <item>Земля</item>
+        <item>Юпітер</item>
+        <item>Сатурн</item>
+    </string-array>
+
+    <string-array name="options_question_2">
+        <item>Лев Толстой</item>
+        <item>Вільям Шекспір</item>
+        <item>Марк Твен</item>
+        <item>Френсіс Бекон</item>
+    </string-array>
+
+    <string-array name="options_question_3">
+        <item>Вуглець</item>
+        <item>Кремній</item>
+        <item>Оксиген</item>
+        <item>Залізо</item>
+    </string-array>
 </resources>
