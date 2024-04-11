@@ -7,7 +7,10 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
+import androidx.hilt.navigation.compose.hiltViewModel
+import com.example.mytestquiz.presentation.CustomDialog
 import com.example.mytestquiz.presentation.QuizScreen
+import com.example.mytestquiz.presentation.QuizViewModel
 import com.example.mytestquiz.ui.theme.MyTestQuizTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -22,7 +25,11 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
+                    val viewModel = hiltViewModel<QuizViewModel>()
+                    //val openDialog by remember { viewModel.openDialog }
+
                     QuizScreen()
+                    CustomDialog(openDialog = viewModel.openDialog)
                 }
             }
         }
